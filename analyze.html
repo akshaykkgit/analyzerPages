@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid body_section">
+      <div class="row navbar">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <img src="Images/Untitled.png" height="30" width="150">
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="">
+             <ul class="nav justify-content-end">  
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="analyze.html">Analyze</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="configure.html">Configure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Ask Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Help</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+      <div class="row">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3 class="title_content">Log Analyzer</h3>
+           </div>
+      </div>
+      <!-- Step bar start -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="analyze.html">Analyze</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="result.html">Result</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="advancedResult.html">Advanced Result</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <!-- Step bar end -->
+       <!-- input page start -->
+           <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div class=" row input_section">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <label class="label_content">Choose Log File to Analyze : </label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">              
+                <input type="file" value="file">
+              </div>
+              </div>
+              <div class="row input_section">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <label class="label_content">Select Component / Module : </label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                  <div class="row sideManu">
+                    <div class="sidenav">
+                      <button class="dropdown-btn"><img src="Images/down.png" />E/E Architecture</button>
+                      <div class="dropdown-container dropdown-list">
+                        <button class="dropdown-btn">
+                          <img src="images/down.png" />
+                          Adas
+                        </button>
+                        <div class="dropdown-container dropdown-list" onclick="onExpectedButton()">
+                          <a href="#"><input type="checkbox" class="checkBoxContainer">Mcu=Rh850</a>
+                          <a href="#"><input type="checkbox" class="checkBoxContainer">Soc=s4</a>
+                          <a href="#"><input type="checkbox" class="checkBoxContainer">Soc=v4h</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+              </div>
+              <div class="row input_section">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                  <label class="label_content">Work Flow : </label>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select Work Flow</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>             
+              </div>  
+              <div class="analyse_button">
+                <a href="result.html"><button class="btn btn_Analyze btn-lg">Start Analysis</button></a>
+              </div>            
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+           </div>
+       <!-- input page end -->
+    
+    </div>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/custom.js"></script>
+  </body>
+</html>
